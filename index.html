@@ -81,9 +81,26 @@
 	span {
 		font-weight: bold;
 	}
+	.loader {
+		background-color: darkorange;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	.loader p {
+		margin-top: 300px;
+		font-size: 30px;
+	}
 </style>
 </head>
 <body>
+	<div class="loader">
+		<p>loading...</p>
+		<img src="images/dice-load.png" alt="DICE">
+	</div>
 	<div class="container">
 		<h1>Dados RPG</h1>
 		<fieldset class="choose">

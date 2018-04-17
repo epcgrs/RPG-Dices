@@ -1,5 +1,9 @@
 $(function(){
 
+    window.onload = function() {
+        $('.loader').css('display', 'none');
+    };
+
     $('#dice_roll').on('click', function(event) {
         event.preventDefault();
         $.ajax({
@@ -12,10 +16,9 @@ $(function(){
             $('.dice-result').html(data);
         })
         .fail(function() {
-             $('.dice-result').html('<span>ERRO!<br>Tente novamente mais tarde</span>');
-        });
+           $('.dice-result').html('<span>ERRO!<br>Tente novamente mais tarde</span>');
+       });
 
     });
-    
 
 }); 
