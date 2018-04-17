@@ -6,7 +6,7 @@
     <style>
         body {
             margin: 0;
-            background-image: url(../pulp-fiction.jpg);
+            background-image: url(../images/pulp-fiction.jpg);
             -webkit-background-size: cover;
             background-size: cover;
         }
