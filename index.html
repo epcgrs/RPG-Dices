@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="emmanuel">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+	<title>Dados RPG</title>
+	<style>
+	body{
+		background-image: url(dd.jpg);
+		text-align: center;
+		background-size: cover;
+		background-position: center right;
+		background-attachment: fixed;
+		max-width: 1200px;
+		height: 100vh;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 18px;
+	}
+	form {
+		max-width: 400px;
+		margin: auto;
+		padding: 20px
+	}
+	input, select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+
+	input[type=submit] {
+		width: 100%;
+		background-color: #44403E;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+		background-color: #000;;
+	}
+
+	fieldset {
+		background: url(http://api.thumbr.it/whitenoise-300x300.png?background=cc3131ff&noise=ebe2eb&density=28&opacity=35  );
+		border: none;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 50px;
+		border-radius: 20px;
+		box-shadow: 0px 0px 54px 15px rgba(0,0,0,0.75);
+	}
+	h1 {
+		color:#fff;
+	}
+	.container {
+		width: 100%;
+	}
+	span {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Dados RPG</h1>
+		<fieldset class="choose">
+			<form method="post" id="form-dice">
+
+				<label>Escolha o Dado</label>
+				<select name="selopcao">
+					<option value="d4">D4</option>
+					<option value="d6">D6</option>
+					<option value="d8">D8</option>
+					<option value="d10">D10</option>
+					<option value="d12">D12</option>
+					<option value="d20">D20</option>
+				</select>
+				<input type="text" name="txtqtd" placeholder="Quantidade">
+				<input type="submit" value="Rolar" id="dice_roll">
+
+			</form>
+		</fieldset>
+		<fieldset class="result">
+			<h4>Resultado:</h4>
+			<div class="dice-result">
+				
+			</div>
+		</fieldset>
+	</div>
+</body>
+
+<html>
