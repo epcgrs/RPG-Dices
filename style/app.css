@@ -1,0 +1,86 @@
+body {
+    font-family: 'Berkshire Swash', cursive;
+    background-image: url(../images/dd.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 18px;
+}
+select option {
+    font-family: 'Berkshire Swash', cursive;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #44403E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #000;;
+}
+
+fieldset {
+    background: url(http://api.thumbr.it/whitenoise-300x300.png?background=cc3131ff&noise=ebe2eb&density=28&opacity=35  );
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 54px 15px rgba(0,0,0,0.75);
+}
+h1 {
+    color:#fff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.75);
+}
+.container {
+    width: 100%;
+}
+.title-result {
+    font-size: 22px;
+}
+.dice-number {
+    font-size: 20px;
+}
+span {
+    font-weight: bold;
+}
+.loader {
+    background-color: darkorange;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.loader p {
+    margin-top: 300px;
+    font-size: 30px;
+}
