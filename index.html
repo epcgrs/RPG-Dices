@@ -2,18 +2,30 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="emmanuel">
+	<meta name="author" content="Emmanuel Pires">
+	<meta name="description" content="Gerador de dados RPG, Gere até 100 dados de um tipo: D4, D6, D8, D10, D12, D20.">
+	<meta name="theme-color" content="#c13b1d">
+	<meta name="keywords" content="RPG,rpg,dice,dado,dados,dados rpg, rpg dices">
+	<title>Dados RPG</title>
+
+	<!-- SCRIPTS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="javascript/app.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
-	<title>Dados RPG</title>
+	
+	<!-- STYLES -->
 	<link href="style/app.css" rel="stylesheet" type="text/css">
+	
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
 </head>
 <body>
+	<!-- LOADER -->
 	<div class="loader">
 		<p>Carregando...</p>
 		<img src="images/dice-load.png" alt="DICE">
 	</div>
+
 	<div class="container">
 		<h1>Dados RPG</h1>
 		<fieldset class="choose">
@@ -28,18 +40,25 @@
 					<option value="d12">D12</option>
 					<option value="d20">D20</option>
 				</select>
+
 				<input type="text" name="txtqtd" placeholder="Quantidade">
+
 				<input type="submit" value="Rolar" id="dice_roll">
 
 			</form>
 		</fieldset>
+
 		<fieldset class="result">
+
 			<h4 class="title-result">Resultado:</h4>
+
 			<div class="dice-result">
 				<!-- Resultados injetados aqui via AJAX, ver javascript/app.js -->
 			</div>
+
 		</fieldset>
 	</div>
+	
 </body>
 
 <html>
