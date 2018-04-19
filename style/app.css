@@ -1,3 +1,14 @@
+
+/* --------------------------------------------------------
+Style Sheet for PHP-Dices
+
+version: 1.0
+last modified: 19.04.2018 by Emmanuel Pires
+author: Emmanuel Pires
+email: emmanuelf988@gmail.com
+website: http://emmanuelpires.tk
+----------------------------------------------------------*/
+
 body {
     font-family: 'Berkshire Swash', cursive;
     background-image: url(../images/dd.jpg);
@@ -81,6 +92,6 @@ span {
     text-align: center;
 }
 .loader p {
-    margin-top: 300px;
+    margin-top: 200px;
     font-size: 30px;
 }
