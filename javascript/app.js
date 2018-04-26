@@ -13,7 +13,7 @@ $(function(){
 
     // Quando carregar todo contúdo da página retirar o loader
     window.onload = function() {
-        $('.loader').css('display', 'none');
+        $('.loader').remove();
     };
 
     // Quando clicar para rolar os dados Chamar função via ajax e mostrar os resultados
