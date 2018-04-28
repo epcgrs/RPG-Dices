@@ -14,11 +14,13 @@ $(function(){
     // Quando carregar todo contúdo da página retirar o loader
     window.onload = function() {
         $('.loader').remove();
+        $('.result').hide();
     };
 
     // Quando clicar para rolar os dados Chamar função via ajax e mostrar os resultados
     $('#dice_roll').on('click', function(event) {
         event.preventDefault();
+        $('.result').show('fast');
         $.ajax({
             url: 'controle/sorteiocontrole.php',
             type: 'POST',
