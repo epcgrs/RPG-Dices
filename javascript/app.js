@@ -13,7 +13,7 @@ $(function(){
 
     // Quando carregar todo contúdo da página retirar o loader
     window.onload = function() {
-        $('.loader').remove();
+       	$('.loader').css('display','none');
         $('.result').hide();
     };
 
