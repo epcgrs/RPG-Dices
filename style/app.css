@@ -17,7 +17,6 @@ body {
     background-position: center right;
     background-attachment: fixed;
     max-width: 1200px;
-    height: 100vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +52,7 @@ input[type=submit] {
     cursor: pointer;
 }
 input[type=submit]:hover {
-    background-color: #000;;
+    background-color: #000;
 }
 fieldset {
     background: url(http://api.thumbr.it/whitenoise-300x300.png?background=cc3131ff&noise=ebe2eb&density=28&opacity=35);
@@ -61,18 +60,38 @@ fieldset {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 0px 54px 15px rgba(0,0,0,0.75);
 }
 h1 {
     color:#fff;
     text-shadow: 0px 0px 5px rgba(0,0,0,0.75);
+    font-family: 'Berkshire Swash', cursive;
 }
 .container {
     width: 100%;
 }
 .title-result {
     font-size: 22px;
+}
+.welcome {
+    padding: 30px;
+}
+.welcome h2 {
+    font-family: 'Berkshire Swash', cursive;
+    text-decoration: underline;
+}
+.welcome .home-image {
+    height: 400px;
+    width: auto;
+    margin: 30px 0px;
+}
+.welcome p {
+    font-weight: 400;
+    text-align: justify;
+}
+.welcome a:hover {
+    color: #fff;
 }
 .dice-number {
     font-size: 20px;
@@ -88,7 +107,7 @@ h1 {
 	flex-grow: 1;
 	width: 25%;
 	height: 40px;
-		text-align: center;
+  text-align: center;
 }
 span {
     font-weight: bold;
@@ -107,15 +126,23 @@ span {
     font-size: 30px;
     margin-bottom: 30px;
 }
+
+.w3-bar {
+    padding: 10px 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+
 footer {
     max-width: 1200px;
     width: 100%;
     height: 80px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    background: url(http://api.thumbr.it/whitenoise-300x300.png?background=cc3131ff&noise=ebe2eb&density=28&opacity=35);
+    color: #fff;
+    background-color: #000;
 }
 footer span {
     text-align: center;
@@ -124,7 +151,7 @@ footer div {
 	margin-top: 35px;
 }
 footer span a {
-    color: #000;
+    color: #fff;
     text-decoration: underline;
 }
 footer span a:hover {
