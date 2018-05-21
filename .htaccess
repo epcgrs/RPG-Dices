@@ -1,0 +1,10 @@
+RewriteEngine On
+ErrorDocument 404 http://rpgdices.rf.gd/404
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteRule ^home/?$ /index.php [NC,L]
+  RewriteRule ^dices/?$ /dices.php [NC,L]
+  RewriteRule ^404/?$ /404.php [NC,L]
+</IfModule>

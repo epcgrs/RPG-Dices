@@ -31,8 +31,8 @@
     
     <!-- Menu -->
     <div class="w3-bar w3-black">
-        <a href="index.php" class="w3-bar-item w3-button">Home</a>
-        <a href="dices.php" class="w3-bar-item w3-button">Dado RPG</a>
+        <a href="home" class="w3-bar-item w3-button">Home</a>
+        <a href="dices" class="w3-bar-item w3-button">Dado RPG</a>
         <div class="w3-dropdown-hover">
             <button class="w3-button">Documentos</button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
